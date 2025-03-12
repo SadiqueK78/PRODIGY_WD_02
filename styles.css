@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: Arial, sans-serif;
+}
+.stopwatch {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+.time {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.start { background: #4CAF50; color: white; }
+.pause { background: #FFC107; color: white; }
+.reset { background: #F44336; color: white; }
+.lap { background: #00BCD4; color: white; }
+button:hover { transform: scale(1.1); }
+.laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.laps li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out;
+}
