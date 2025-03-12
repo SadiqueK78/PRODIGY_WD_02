@@ -16,3 +16,5 @@ CSS – Styles the stopwatch for an engaging UI.
 JavaScript – Handles timing functions and interactivity.
 
 output:- 
+![Image](https://github.com/user-attachments/assets/6bc4ebe8-fd8d-4968-afae-5e971be5ecb8)
+![Image](https://github.com/user-attachments/assets/ab8feb52-5e19-4c91-ac3c-f2649b3e56e1)
